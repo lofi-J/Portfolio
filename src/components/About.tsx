@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+
 import HoverGlowText from "./HoverGlowText";
 
 const StyledAbout = styled.section`

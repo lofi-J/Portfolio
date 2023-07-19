@@ -1,5 +1,6 @@
-
 import { styled } from "styled-components";
+
+// Components
 import HoverGlowText from "./HoverGlowText";
 import BorderBox from "./BorderBox";
 
@@ -18,13 +19,18 @@ import { ReactComponent as Railway } from "../svg/railway.svg";
 import { ReactComponent as Git } from "../svg/git.svg";
 import { ReactComponent as Github } from "../svg/github.svg";
 
-const StyledSkill = styled.section`
+const StyledSkills = styled.section`
     width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: column;
     .hover-glow { margin-bottom: 1rem; }
-    .skill__introduce__javascript { color: var(--color-neon-default); }
+    .skills__introduce__javascript {
+        color: var(--color-neon-default);
+    }
+    .skills__introduce-p {
+        line-height: 1.5;
+    }
     .skills__box {
         display: flex;
         flex-direction: row;
@@ -65,13 +71,13 @@ const StyledSkill = styled.section`
 
 const Skills = () => {
     return (
-        <StyledSkill id="Skills">
+        <StyledSkills id="Skills">
             <HoverGlowText text="Skills" isSubTitle={true} />
             <p className="skills__introduce-p">
                 개발공부를 해오며 만들어보고 싶었던 웹 사이트들을 제작하는 과정에서 필요에 의해 자연스럽게 익힌 기술 스택들입니다.
             </p>
             <p className="skills__introduce-p">
-                여러 기술 스택들을 익히며 특히 <span className="skill__introduce__javascript">Javascript</span>를 깊게 이해하기 위해 노력하고 있습니다.
+                여러 기술 스택들을 익히며 특히 <span className="skills__introduce__javascript">Javascript</span>를 깊게 이해하기 위해 노력하고 있습니다.
             </p>
             <div className="skills__box">
                 <div className="skills__box__wrapper">
@@ -109,7 +115,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-        </StyledSkill>
+        </StyledSkills>
     );
 }
 

@@ -16,7 +16,7 @@ const StyledBorderBox = styled.div`
         width: 0px;
         height: 0px;
 
-        transition: width 1s ease 0s, height 1s ease 0s;
+        transition: width .5s ease 0s, height .5s ease 0s;
     }
  
     &::before {
@@ -27,11 +27,12 @@ const StyledBorderBox = styled.div`
         width: 0px;
         height: 0px;
         
-        transition: width 1s ease 0s, height 1s ease 0s;
+        transition: width .5s ease 0s, height .5s ease 0s;
     }
     
     &:hover {
-        transition-delay: 1s;
+        transition-delay: .5s;
+        
         box-shadow: 0 0 20px var(--color-neon-default);
         &::after {
             width: 100%;

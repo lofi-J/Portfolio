@@ -56,12 +56,12 @@ table {
 	border-spacing: 0;
 }
 * {
+	font-family: 'IBM Plex Sans KR', sans-serif;
 	box-sizing: border-box;
-	font-family: 'Source ', monospace;
 }
 :root {
   font-size: 16px;
-  color: white;
+  color: var(--color-text-p);
   background-color: black;
   --color-neon-default: #14FFEC;
   --color-neon-green: #16FF00;
@@ -72,13 +72,17 @@ table {
   --color-text-p: #c5c5c5;
   --color-bg-darkGray: #0E0E0E;
 }
+h3 { font-family: 'Source Code Pro', monospace; }
 p {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'IBM Plex Sans KR', sans-serif;
 	color: var(--color-text-p);
 	margin-bottom: .5rem;
 }
 button {
 	font-family: 'Source Code Pro', monospace;
+}
+svg {
+        fill: white;
 }
 
 // 큰 PC 모니터에 대한 스타일
@@ -88,6 +92,8 @@ button {
 		header {
 			font-size: 18px;
 		}
+
+		/* Skill */
 		svg {
 			width: 25px;
 			height: 25px;
@@ -100,6 +106,11 @@ button {
 			.version-control {
 				margin-top: 2rem;
 			}
+		}
+
+		/* Project */
+		.description-p {
+			font-size: 14pt;
 		}
 	}
 }
@@ -116,6 +127,7 @@ button {
 			height: 22px;
 			fill: white;
 		}
+		/* Skill */
 		.skills__box {
 			flex-direction: column;
 			.hover-glow {
@@ -128,8 +140,31 @@ button {
 				margin-bottom: 4rem;
 			}
 		}
+		/* Project */
 		#Projects {
 			margin-top: 30vh;
+		}
+		.projects__container {
+			display: flex;
+			flex-direction: column;
+			.border-box {
+				margin-bottom: 2rem;
+			}
+			.projects__container__subject {
+				width: 80vw;
+				height: max-content;
+				.projects__container__subject__header {
+					img {
+						width: 6vw;
+						height: 6vw;
+					}
+					h3 { font-size: 1.5rem; }
+					.sav { font-size: 1.3rem; }
+				}
+			}
+			.description-p {
+				font-size: 14pt;
+			}
 		}
 	}
 }
@@ -146,9 +181,18 @@ button {
 			height: 20px;
 			fill: white;
 		}
-		.skills__box {
-			.item-text {
-				font-size: 16px;
+		/* Projects */
+		.projects__container__subject {
+			.projects__container__subject__header {
+				img {
+					width: 8vw;
+					height: 8vw;
+					margin-right: 1rem;
+				}
+				h3 { 
+					font-size: 25px;
+				}
+				.sav { font-size: 1.3rem; }
 			}
 		}
 	}
@@ -169,6 +213,20 @@ button {
 		.skills__box {
 			.item-text {
 				font-size: 12px;
+			}
+		}
+		/* Projects */
+		.projects__container__subject {
+			.projects__container__subject__header {
+				img {
+					width: 8vw;
+					height: 8vw;
+					margin-right: 1rem;
+				}
+				h3 { 
+					font-size: 1rem;
+				}
+				.sav { font-size: 1.3rem; }
 			}
 		}
 	}
