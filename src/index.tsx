@@ -72,17 +72,21 @@ table {
   --color-text-p: #c5c5c5;
   --color-bg-darkGray: #0E0E0E;
 }
-h3 { font-family: 'Source Code Pro', monospace; }
+h3 { font-family: 'Noto Sans KR', sans-serif; }
 p {
 	font-family: 'IBM Plex Sans KR', sans-serif;
 	color: var(--color-text-p);
 	margin-bottom: .5rem;
 }
 button {
-	font-family: 'Source Code Pro', monospace;
+	
 }
 svg {
         fill: white;
+}
+a {
+	text-decoration: none;
+	/* color: #c5c5c5; */
 }
 
 // 큰 PC 모니터에 대한 스타일
@@ -142,7 +146,7 @@ svg {
 		}
 		/* Project */
 		#Projects {
-			margin-top: 30vh;
+			margin-top: 400px;
 		}
 		.projects__container {
 			display: flex;
@@ -159,11 +163,21 @@ svg {
 						height: 6vw;
 					}
 					h3 { font-size: 1.5rem; }
-					.sav { font-size: 1.3rem; }
 				}
 			}
 			.description-p {
 				font-size: 14pt;
+			}
+		}
+		/* Contact */
+		#Contact {
+			margin-top: 400px;
+		}
+		.contact-content {
+			flex-direction: column;
+			#map {
+				margin-top: 100px;
+				width: 100%;
 			}
 		}
 	}
@@ -182,6 +196,9 @@ svg {
 			fill: white;
 		}
 		/* Projects */
+		#Projects {
+			margin-top: 200px;
+		}
 		.projects__container__subject {
 			.projects__container__subject__header {
 				img {
@@ -192,8 +209,11 @@ svg {
 				h3 { 
 					font-size: 25px;
 				}
-				.sav { font-size: 1.3rem; }
 			}
+		}
+		/* Contact */
+		#Contact {
+			margin-top: 200px;
 		}
 	}
 }
@@ -216,6 +236,9 @@ svg {
 			}
 		}
 		/* Projects */
+		#Projects {
+			margin-top: 100px;
+		}
 		.projects__container__subject {
 			.projects__container__subject__header {
 				img {
@@ -226,8 +249,11 @@ svg {
 				h3 { 
 					font-size: 1rem;
 				}
-				.sav { font-size: 1.3rem; }
 			}
+		}
+		/* Contact */
+		#Contact {
+			margin-top: 100px;
 		}
 	}
 }

@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 import HoverGlowText from "./HoverGlowText";
+import { Link } from "react-scroll";
 
 const StyledAbout = styled.section`
     width: 100%;
@@ -10,6 +11,7 @@ const StyledAbout = styled.section`
     justify-content: center;
 
     .hover-glow {
+        font-family: 'Abril Fatface', cursive;
         margin-bottom: 1rem;
     }
     .about__frontend-text {
@@ -29,6 +31,7 @@ const StyledAbout = styled.section`
         max-width: 200px;
         min-height: 50px;
         margin-top: 3rem;
+        padding: 0 1rem;
         border: 1.5px solid var(--color-neon-yellow);
         border-radius: 10px;
         transition: .5s;
@@ -43,11 +46,11 @@ const StyledAbout = styled.section`
 const About = () => {
     return(
         <StyledAbout id="About">
-            <HoverGlowText text="Jo Seongjun" isSubTitle={false} />
+            <HoverGlowText text="Jo Seong jun" isSubTitle={false} />
             <h2 className="about__frontend-text">FRONT-END DEVELOPER</h2>
             <p className="about__description">지적 호기심이 많아 지속적으로 성장하며</p>
             <p className="about__description">문제해결을 위해 탐구하는 프론트엔드 개발자입니다.</p>     
-            <button className="about__button-contact">CONTACT ME</button>       
+            <Link to="Contact" smooth={true} duration={500} offset={-130}><button className="about__button-contact">CONTACT ME</button></Link>
         </StyledAbout>
     );
 }

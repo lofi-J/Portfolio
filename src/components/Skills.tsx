@@ -24,7 +24,10 @@ const StyledSkills = styled.section`
     height: 90vh;
     display: flex;
     flex-direction: column;
-    .hover-glow { margin-bottom: 1rem; }
+    .hover-glow { 
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
     .skills__introduce__javascript {
         color: var(--color-neon-default);
     }
@@ -44,6 +47,7 @@ const StyledSkills = styled.section`
             
             .hover-glow {
                 margin-bottom: .5rem;
+                font-weight: 100;
             }
             .border-box {
                 display: flex;
@@ -62,7 +66,8 @@ const StyledSkills = styled.section`
             padding: .5rem;
         }
         .item-text {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 100;
             font-size: 20px;
             padding-left: .5rem;
         }

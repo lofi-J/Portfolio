@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from "react-scroll";
 
 // Components
 import HoverGlowText from "./HoverGlowText";
@@ -16,10 +17,14 @@ import { ReactComponent as React } from "../svg/react.svg";
 import { ReactComponent as Recoil } from "../svg/recoil.svg";
 import { ReactComponent as Redux } from "../svg/redux.svg";
 import { ReactComponent as Express } from "../svg/express.svg";
+import { ReactComponent as Mysql } from "../svg/mysql.svg";
 
 const StyledProjects = styled.section`
     width: 100%;
     height: 90vh;
+    .hover-glow {
+        font-weight: 300;
+    }
     .projects__p {
         margin-top: 2rem;
         text-decoration: none;
@@ -50,7 +55,9 @@ const StyledProjects = styled.section`
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
+        a {
+            color: var(--color-text-p);
+        }
         .projects__container__subject {
             display: flex;
             flex-direction: column;
@@ -72,9 +79,6 @@ const StyledProjects = styled.section`
                     height: max-content;
                     line-height: 1;
                     font-size: 1.3rem;
-                }
-                .sav {
-                    font-size: 1rem;
                 }
             }
             .projects__container__subject__description {
@@ -117,68 +121,75 @@ const Projects = () => {
             </p>
             <div className="projects__container">
                 {/* JSJ */}
-                <BorderBox>
-                    <div className="projects__container__subject portfolio">
-                        <div className="projects__container__subject__header">
-                            <img src={jcon} alt="J logo" />
-                            <h3>JoSeongJun</h3>
-                        </div>
-                        <div className="projects__container__subject__description">
-                            <p className="description-p">
-                                저의 개인 웹 사이트를 가지기 위해 React, TypeScript를 이용해 제작하였으며 주기적으로 갱신되고 있습니다.
-                            </p>
-                        </div>
-                        <div className="projects__container__subject__badges">
-                            <React style={{ fill: "#61DAFB" }} />
-                            <Typescript style={{ fill: "#3178C6" }} />
-                        </div>
-                    </div>
-                </BorderBox>
+                <Link to="About" smooth={true} duration={500} offset={-100}>
+                    <BorderBox>
+                        <div className="projects__container__subject portfolio">
+                            <div className="projects__container__subject__header">
+                                <img src={jcon} alt="J logo" />
+                                <h3>JoSeongJun</h3>
+                            </div>
+                            <div className="projects__container__subject__description">
+                                <p className="description-p">
+                                    저의 개인 웹 사이트를 가지기 위해 React, TypeScript를 이용해 제작하였으며 주기적으로 갱신되고 있습니다.
+                                </p>
+                            </div>
+                            <div className="projects__container__subject__badges">
+                                <React style={{ fill: "#61DAFB" }} />
+                                <Typescript style={{ fill: "#3178C6" }} />
+                            </div>
+                        </div> 
+                    </BorderBox>
+                </Link>
                 {/* SORT VISUALIZER */}
-                <BorderBox>
-                    <div className="projects__container__subject">
-                        <div className="projects__container__subject__header">
-                            <img src={graph} alt="sort logo" />
-                            <h3 className="sav">Visualization</h3>
+                <a href="https://sort-algorithms-visualization.netlify.app" target="_blank" rel="noreferrer">
+                    <BorderBox>
+                        <div className="projects__container__subject">
+                            <div className="projects__container__subject__header">
+                                <img src={graph} alt="sort logo" />
+                                <h3 className="sav">Visualization</h3>
+                            </div>
+                            <div className="projects__container__subject__description">
+                                <p className="description-p">
+                                    HTML Canvas와 Web Audio API를 이용해 정렬 알고리즘 시각화한 개인 프로젝트입니다.
+                                </p>
+                                <p className="description-p">
+                                    다크모드 구현 및 비동기 처리에 대한 이해를 높일 수 있었습니다.
+                                </p>
+                            </div>
+                            <div className="projects__container__subject__badges">
+                                <React style={{ fill: "#61DAFB" }} />
+                                <Typescript style={{ fill: "#3178C6" }} />
+                                <Recoil style={{ fill: "#3578E5" }} />
+                            </div>
                         </div>
-                        <div className="projects__container__subject__description">
-                            <p className="description-p">
-                                HTML Canvas와 Web Audio API를 이용해 정렬 알고리즘 시각화한 개인 프로젝트입니다.
-                            </p>
-                            <p className="description-p">
-                                다크모드 구현 및 비동기 처리에 대한 이해를 높일 수 있었습니다.
-                            </p>
-                        </div>
-                        <div className="projects__container__subject__badges">
-                            <React style={{ fill: "#61DAFB" }} />
-                            <Typescript style={{ fill: "#3178C6" }} />
-                            <Recoil style={{ fill: "#3578E5" }} />
-                        </div>
-                    </div>
-                </BorderBox>
+                    </BorderBox>
+                </a>
                 {/* WEB TETRIS */}
-                <BorderBox>
-                    <div className="projects__container__subject">
-                        <div className="projects__container__subject__header">
-                            <img src={tetris} alt="J logo" className="tetris" />
-                            <h3>TETRIS</h3>
+                <a href="https://tetris-v1-production.up.railway.app/" target="_blank" rel="noreferrer">
+                    <BorderBox>
+                        <div className="projects__container__subject">
+                            <div className="projects__container__subject__header">
+                                <img src={tetris} alt="J logo" className="tetris" />
+                                <h3>TETRIS</h3>
+                            </div>
+                            <div className="projects__container__subject__description">
+                                <p className="description-p">
+                                    React Hook과 상태관리에 좀 더 깊게 이해하기 위해 진행한 2인 프로젝트입니다.
+                                </p>
+                                <p className="description-p">
+                                    Tetris 게임 로직 및 컴포넌트 설계 그리고 백엔드 부분을 담당했습니다.
+                                </p>
+                            </div>
+                            <div className="projects__container__subject__badges">
+                                <React style={{ fill: "#61DAFB" }} />
+                                <Javascript style={{ fill: "#F7DF1E" }} />
+                                <Redux style={{ fill: "#764ABC" }} />
+                                <Express />
+                                <Mysql style={{ fill: "#3e95cb" }} />
+                            </div>
                         </div>
-                        <div className="projects__container__subject__description">
-                            <p className="description-p">
-                                React Hook과 상태관리에 좀 더 깊게 이해하기 위해 진행한 2인 프로젝트입니다.
-                            </p>
-                            <p className="description-p">
-                                Tetris 게임 로직 및 컴포넌트 설계 그리고 백엔드 부분을 담당했습니다.
-                            </p>
-                        </div>
-                        <div className="projects__container__subject__badges">
-                            <React style={{ fill: "#61DAFB" }} />
-                            <Javascript style={{ fill: "#F7DF1E" }} />
-                            <Redux style={{ fill: "#764ABC" }} />
-                            <Express />
-                        </div>
-                    </div>
-                </BorderBox>
+                    </BorderBox>
+                </a>
             </div>
         </StyledProjects>
     );

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 const StyledHoverGlowText = styled.span<IStyledHoverGlowText>`
-    font-family: ${props => props.is_sub_title ? "'Source Code Pro', monospace" : 'Victor Mono'};
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: ${props => props.is_sub_title ? 'none' : 'italic'};
     padding: 20px 0;
     max-width: max-content;

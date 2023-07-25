@@ -53,12 +53,12 @@ const Header = () => {
                     <Link to="Projects" smooth={true} duration={500} offset={-130}>
                         <li><span>3. </span>PROJECT</li>
                     </Link>
-                    <li><span>4. </span>CONTACT</li>
+                    <Link to="Contact" smooth={true} duration={500} offset={-130}>
+                        <li><span>4. </span>CONTACT</li>
+                    </Link>
                 </ol>
             </nav>
         </StyledHeader>
     );
 }
 export default Header;
-
-// FIXME Link 태그를 사용하기 위해 to='id value'를 지정하고 원하는 html 요소에 id 를 부여해 맵핑해준다.
