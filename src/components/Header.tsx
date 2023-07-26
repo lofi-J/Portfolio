@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 import { Link } from "react-scroll";
 
 const StyledHeader = styled.header`
-    /* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap'); */
     position: fixed;
     display: flex;
     flex-direction: row;

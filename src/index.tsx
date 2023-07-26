@@ -180,6 +180,10 @@ a {
 				width: 100%;
 			}
 		}
+		/* Footer */
+		footer {
+			display: none;
+		}
 	}
 }
 
@@ -221,7 +225,7 @@ a {
 // 스마트폰에 대한 스타일
 @media only screen and (max-width: 767px) {
 	:root {
-		font-size: 14px;
+		font-size: 16px;
 		header {
 			font-size: 12px;
 		}

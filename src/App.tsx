@@ -4,10 +4,10 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const StyledApp = styled.div`
 	main {
-		/* header fixed(header height: 5vh) */
 		padding-top: 10vh;
 		margin: 0 10vw;
 	}
@@ -23,6 +23,7 @@ function App() {
 				<Projects />
 				<Contact />
 			</main>
+			<Footer />
 		</StyledApp>
 	);
 }
