@@ -13,6 +13,10 @@ const StyledHeader = styled.header`
     padding: 0 10%;
     background-color: black;
     z-index: 999;
+    a {
+        text-decoration: none;
+        color: gray;
+    }
 
     .header__my-name {
         font-family: 'Noto Serif Makasar', serif;
@@ -55,6 +59,7 @@ const Header = () => {
                     <Link to="Contact" smooth={true} duration={500} offset={-130}>
                         <li><span>4. </span>CONTACT</li>
                     </Link>
+                    <a href="https://google.com" target="_blank" rel="noreferrer"><li><span>5. </span>RESUME</li></a>
                 </ol>
             </nav>
         </StyledHeader>
