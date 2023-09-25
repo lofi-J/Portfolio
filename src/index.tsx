@@ -192,7 +192,7 @@ a {
 	:root {
 		font-size: 16px;
 		header {
-			font-size: 16px;
+			font-size: 14px;
 		}
 		svg {
 			width: 20px;
@@ -227,7 +227,8 @@ a {
 	:root {
 		font-size: 16px;
 		header {
-			font-size: 12px;
+			font-size: 8px;
+			.header__name { display: none; }
 		}
 		svg {
 			width: 12px;

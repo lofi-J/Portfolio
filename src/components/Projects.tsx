@@ -21,7 +21,8 @@ import { ReactComponent as Mysql } from "../svg/mysql.svg";
 
 const StyledProjects = styled.section`
     width: 100%;
-    height: 90vh;
+    height: max-content;
+    padding-bottom: 10vh;
     .hover-glow {
         font-weight: 300;
     }
@@ -105,6 +106,20 @@ const StyledProjects = styled.section`
     .tetris {
         transform: rotate(90deg);
     }
+
+    /* current part */
+    .current-project {
+        margin: 1rem 0;
+        p { font-size: medium; }
+        a { 
+            color: white;
+            font-size: 16px;
+            text-decoration: underline;
+            &:hover {
+                color: var(--color-neon-default);
+            }
+        }
+    }
 `;
 
 const Projects = () => {
@@ -165,7 +180,7 @@ const Projects = () => {
                     </BorderBox>
                 </a>
                 {/* WEB TETRIS */}
-                <a href="https://tetris-v1-production.up.railway.app/" target="_blank" rel="noreferrer">
+                <a href="https://react-js-tetris.up.railway.app/" target="_blank" rel="noreferrer">
                     <BorderBox>
                         <div className="projects__container__subject">
                             <div className="projects__container__subject__header">
@@ -190,6 +205,10 @@ const Projects = () => {
                         </div>
                     </BorderBox>
                 </a>
+            </div>
+            <div className="current-project">
+                <p>현재 협업경험을위해 5인 팀프로젝트를 진행중에 있습니다.</p>
+                <a href="https://github.com/Fitness-Commerce/frontend" target="_blank" rel="noreferrer">Fitness-Commerce</a>
             </div>
         </StyledProjects>
     );

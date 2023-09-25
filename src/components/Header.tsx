@@ -43,7 +43,7 @@ const StyledHeader = styled.header`
 const Header = () => {
     return(
         <StyledHeader>
-            <span className="header__my-name">Jo Seong Jun</span>
+            <span className="header__my-name">J<span className="header__name">o Seong Jun</span></span>
             <nav className="header__navigator">
                 <ol>
                     <Link to="About" smooth={true} duration={500} offset={-100}>

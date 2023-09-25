@@ -21,7 +21,8 @@ import { ReactComponent as Github } from "../svg/github.svg";
 
 const StyledSkills = styled.section`
     width: 100%;
-    height: 90vh;
+    height: max-content;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     .hover-glow { 
