@@ -10,7 +10,6 @@ import { ReactComponent as Css3 } from "../svg/css3.svg";
 import { ReactComponent as Javascript } from "../svg/javascript.svg";
 import { ReactComponent as Typescript } from "../svg/typescript.svg";
 import { ReactComponent as React } from "../svg/react.svg";
-import { ReactComponent as Styled } from "../svg/styledcomponents.svg";
 import { ReactComponent as Recoil } from "../svg/recoil.svg";
 import { ReactComponent as Redux } from "../svg/redux.svg";
 import { ReactComponent as Netlify } from "../svg/netlify.svg";
