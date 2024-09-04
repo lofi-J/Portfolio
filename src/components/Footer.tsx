@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import { ReactComponent as Github } from "../svg/_github.svg";
 import { ReactComponent as Email } from "../svg/_email.svg";
 import { ReactComponent as Velog } from "../svg/_velog.svg";
+import { ReactComponent as Arrow } from "../svg/_arrow.svg";
 
 
 const StyledFooter = styled.footer`
@@ -12,11 +13,11 @@ const StyledFooter = styled.footer`
         flex-direction: column;
         padding: 25px;
         svg {
-        fill: transparent;
-        stroke: gray;
-        width: 45px;
-        height: 45px;
-        margin-bottom: 10px;
+          fill: transparent;
+          stroke: gray;
+          width: 45px;
+          height: 45px;
+          margin-bottom: 10px;
         }
     }
     .aside-left {
@@ -48,15 +49,16 @@ const StyledFooter = styled.footer`
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            svg {
+                width: 24px;
+            }
         }
         span {
             writing-mode: vertical-rl;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 20px;
-        }
-        img {
-            height: 40px;
         }
     }
 `;
@@ -73,7 +75,7 @@ const Footer = () => {
             <aside className="aside-right">
                 <div className="aside-right__div">
                     <span>scroll</span>
-                    <img src="https://myphz.github.io/Myphz/icons/arrow.svg" alt="arrow.svg" />
+                    <Arrow />
                 </div>
             </aside>
         </StyledFooter>

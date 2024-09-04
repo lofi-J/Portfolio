@@ -27,6 +27,9 @@ const StyledHeader = styled.header`
             flex-direction: row;
             justify-content: space-around;
             li {
+                display: flex;
+                flex-wrap: nowrap;
+                font-size: 0.8rem;
                 margin-left: 1rem;
                 &:hover {
                     cursor: pointer;
@@ -59,7 +62,7 @@ const Header = () => {
                     <Link to="Contact" smooth={true} duration={500} offset={-130}>
                         <li><span>4. </span>CONTACT</li>
                     </Link>
-                    <a href="https://google.com" target="_blank" rel="noreferrer"><li><span>5. </span>RESUME</li></a>
+                    <a href="https://career.programmers.co.kr/job_profiles/edit" target="_blank" rel="noreferrer"><li><span>5. </span>RESUME</li></a>
                 </ol>
             </nav>
         </StyledHeader>

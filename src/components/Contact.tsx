@@ -13,7 +13,7 @@ const StyledContact = styled.section`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 100px;
+        margin-top: 2rem;
     }
     
     .contact-content__left {

@@ -18,6 +18,7 @@ import { ReactComponent as Heroku } from "../svg/heroku.svg";
 import { ReactComponent as Railway } from "../svg/railway.svg";
 import { ReactComponent as Git } from "../svg/git.svg";
 import { ReactComponent as Github } from "../svg/github.svg";
+import { ReactComponent as NextJS } from "../svg/nextjs.svg";
 
 const StyledSkills = styled.section`
     width: 100%;
@@ -97,7 +98,7 @@ const Skills = () => {
                         </div>
                         <div className="border-box__div">
                             <span className="border-box__div__skill"><React style={{ fill: "#61DAFB" }} /><span className="item-text">React</span></span>
-                            <span className="border-box__div__skill"><Styled style={{ fill: "#DB7093" }} /><span className="item-text">Styled components</span></span>
+                            <span className="border-box__div__skill"><NextJS style={{ fill: "#ffffff" }} /><span className="item-text">NextJS</span></span>
                             <span className="border-box__div__skill"><Recoil style={{ fill: "#3578E5" }} /><span className="item-text">Recoil</span></span>
                             <span className="border-box__div__skill"><Redux style={{ fill: "#764ABC" }} /><span className="item-text">Redux</span></span>
                         </div>
@@ -107,7 +108,7 @@ const Skills = () => {
                     <div className="skills__box__wrapper">
                         <HoverGlowText text="Deployment" isSubTitle={true} />
                         <BorderBox>
-                            <span className="border-box__div__skill"><Netlify style={{ fill: "#00C7B7" }} /><span className="item-text">Redux</span></span>
+                            <span className="border-box__div__skill"><Netlify style={{ fill: "#00C7B7" }} /><span className="item-text">Netlify</span></span>
                             <span className="border-box__div__skill"><Heroku style={{ fill: "#430098" }} /><span className="item-text">Heroku</span></span>
                             <span className="border-box__div__skill"><Railway style={{ fill: "#ffffff" }} /><span className="item-text">Railway</span></span>
                         </BorderBox>

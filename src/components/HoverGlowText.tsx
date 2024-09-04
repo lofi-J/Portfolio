@@ -8,7 +8,7 @@ const StyledHoverGlowText = styled.span<IStyledHoverGlowText>`
     max-width: max-content;
     color: var(--color-neon-yellow);
     transition: .5s;
-    font-size: ${props => props.is_sub_title ? '2.5rem' : '3.5rem'};
+    font-size: ${props => props.is_sub_title ? '2.2rem' : '3.5rem'};
 
     &:hover {
         color: var(--color-neon-yellow);

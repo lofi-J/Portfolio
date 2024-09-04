@@ -7,22 +7,24 @@ import BorderBox from "./BorderBox";
 
 //img
 import graph from "../img/graph.png";
-import jcon from "../img/Jcon.png";
+import keyboard from "../img/keyboard.png";
 import tetris from "../img/tetris.png";
 
 // SVG
 import { ReactComponent as Javascript } from "../svg/javascript.svg";
 import { ReactComponent as Typescript } from "../svg/typescript.svg";
 import { ReactComponent as React } from "../svg/react.svg";
+import { ReactComponent as NextJS } from "../svg/nextjs.svg";
 import { ReactComponent as Recoil } from "../svg/recoil.svg";
 import { ReactComponent as Redux } from "../svg/redux.svg";
 import { ReactComponent as Express } from "../svg/express.svg";
 import { ReactComponent as Mysql } from "../svg/mysql.svg";
 
+
 const StyledProjects = styled.section`
     width: 100%;
     height: max-content;
-    padding-bottom: 10vh;
+    padding-bottom: 4rem;
     .hover-glow {
         font-weight: 300;
     }
@@ -106,20 +108,6 @@ const StyledProjects = styled.section`
     .tetris {
         transform: rotate(90deg);
     }
-
-    /* current part */
-    .current-project {
-        margin: 1rem 0;
-        p { font-size: medium; }
-        a { 
-            color: white;
-            font-size: 16px;
-            text-decoration: underline;
-            &:hover {
-                color: var(--color-neon-default);
-            }
-        }
-    }
 `;
 
 const Projects = () => {
@@ -136,25 +124,25 @@ const Projects = () => {
             </p>
             <div className="projects__container">
                 {/* JSJ */}
-                <Link to="About" smooth={true} duration={500} offset={-100}>
+                <a href="https://typinglab.netlify.app/typing" target="_blank" rel="noreferrer">
                     <BorderBox>
-                        <div className="projects__container__subject portfolio">
+                        <div className="projects__container__subject typing-lab">
                             <div className="projects__container__subject__header">
-                                <img src={jcon} alt="J logo" />
-                                <h3>JoSeongJun</h3>
+                                <img src={keyboard} alt="keyboard icon"/>
+                                <h3>Typing Lab</h3>
                             </div>
                             <div className="projects__container__subject__description">
                                 <p className="description-p">
-                                    저의 개인 웹 사이트를 가지기 위해 React, TypeScript를 이용해 제작하였으며 주기적으로 갱신되고 있습니다.
+                                    Next.js의 기본적인 작업 흐름과 IME시스템을 사용하는 언어의 validation 체크에 대한 다양한 방법을 익힐 수 있었습니다.
                                 </p>
                             </div>
                             <div className="projects__container__subject__badges">
-                                <React style={{ fill: "#61DAFB" }} />
-                                <Typescript style={{ fill: "#3178C6" }} />
+                                <NextJS style={{fill: "#ffffff"}}/>
+                                <Typescript style={{fill: "#3178C6"}}/>
                             </div>
-                        </div> 
+                        </div>
                     </BorderBox>
-                </Link>
+                </a>
                 {/* SORT VISUALIZER */}
                 <a href="https://sort-algorithms-visualization.netlify.app" target="_blank" rel="noreferrer">
                     <BorderBox>
@@ -205,10 +193,6 @@ const Projects = () => {
                         </div>
                     </BorderBox>
                 </a>
-            </div>
-            <div className="current-project">
-                <p>현재 협업경험을위해 5인 팀프로젝트를 진행중에 있습니다.</p>
-                <a href="https://github.com/Fitness-Commerce/frontend" target="_blank" rel="noreferrer">Fitness-Commerce</a>
             </div>
         </StyledProjects>
     );
